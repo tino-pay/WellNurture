@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ed">
+    <meta name="description" content="A welcoming guide to practical everyday wellness, healthy habits, and small steps that work for you.">
+    <title>WellNurture — A Community Health &amp; Wellness Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="WellNurture home">
+          <span class="brand-symbol" aria-hidden="true">w.</span>
+          <span>WellNurture</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#checklist">Daily check-in</a>
+          <a href="#tips">Wellness notes</a>
+          <a href="#planner">Your plan</a>
+        </nav>
+        <a class="header-cta" href="#checklist">Start where you are <span aria-hidden="true">↘</span></a>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero page-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> A kinder guide to everyday health</p>
+          <h1 id="hero-title">Wellness is built<br>in the <em>little things.</em></h1>
+          <p class="hero-description">Small, meaningful ways to care for yourself—made for real schedules, real people, and wherever you are today.</p>
+          <a class="button button-primary" href="#checklist">Start Your Wellness Journey <span aria-hidden="true">→</span></a>
+          <p class="hero-aside"><span aria-hidden="true">✳</span> A community health guide for students and neighbors.</p>
+        </div>
+        <aside class="hero-note" aria-label="A gentle reminder">
+          <div class="note-orbit" aria-hidden="true"><span class="orbit-center">✿</span><span class="orbit-dot"></span></div>
+          <p class="note-label">A gentle reminder</p>
+          <p class="note-quote">“You don't have to do everything. Just one good thing.”</p>
+          <span class="note-signoff">Your pace is the right pace.</span>
+          <span class="note-number" aria-hidden="true">01 / TODAY</span>
+        </aside>
+      </section>
+
+      <section class="daily-section" id="checklist" aria-labelledby="checklist-title">
+        <div class="page-shell">
+          <div class="daily-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> A moment to check in</p>
+              <h2 id="checklist-title">A few good things<br>for <em>today.</em></h2>
+            </div>
+            <p class="daily-intro">Choose the habits you've done today. Every check-in counts, and there's no need to do it all.</p>
+          </div>
+
+          <div class="daily-layout">
+            <form class="checklist" id="habit-checklist">
+              <fieldset>
+                <legend class="visually-hidden">Daily wellness habits</legend>
+                <label class="habit-row" for="habit-water">
+                  <input id="habit-water" name="habit" type="checkbox">
+                  <span class="custom-check" aria-hidden="true"></span>
+                  <span class="habit-text"><strong>Drink water regularly</strong><span class="habit-category">Hydration</span><small>Remember to drink water throughout the day according to your needs.</small></span>
+                  <span class="habit-mark" aria-hidden="true">01</span>
+                </label>
+                <label class="habit-row" for="habit-move">
+                  <input id="habit-move" name="habit" type="checkbox">
+                  <span class="custom-check" aria-hidden="true"></span>
+                  <span class="habit-text"><strong>Take movement breaks</strong><span class="habit-category">Physical Activity</span><small>Take short movement breaks during long periods of sitting.</small></span>
+                  <span class="habit-mark" aria-hidden="true">02</span>
+                </label>
+                <label class="habit-row" for="habit-rest">
+                  <input id="habit-rest" name="habit" type="checkbox">
+                  <span class="custom-check" aria-hidden="true"></span>
+                  <span class="habit-text"><strong>Make time for rest</strong><span class="habit-category">Rest</span><small>Pause between tasks and give yourself time to recharge.</small></span>
+                  <span class="habit-mark" aria-hidden="true">03</span>
+                </label>
+                <label class="habit-row" for="habit-sleep">
+                  <input id="habit-sleep" name="habit" type="checkbox">
+                  <span class="custom-check" aria-hidden="true"></span>
+                  <span class="habit-text"><strong>Follow a wind-down routine</strong><span class="habit-category">Sleep Routine</span><small>Choose a quiet activity that helps you get ready for bed.</small></span>
+                  <span class="habit-mark" aria-hidden="true">04</span>
+                </label>
+                <label class="habit-row" for="habit-relax">
+                  <input id="habit-relax" name="habit" type="checkbox">
+                  <span class="custom-check" aria-hidden="true"></span>
+                  <span class="habit-text"><strong>Take a calming pause</strong><span class="habit-category">Relaxation</span><small>Step away for a few minutes and take a few comfortable breaths.</small></span>
+                  <span class="habit-mark" aria-hidden="true">05</span>
+                </label>
+                <label class="habit-row" for="habit-wellbeing">
+                  <input id="habit-wellbeing" name="habit" type="checkbox">
+                  <span class="custom-check" aria-hidden="true"></span>
+                  <span class="habit-text"><strong>Check in with yourself</strong><span class="habit-category">Personal Well-being</span><small>Notice how you're feeling and choose one small supportive action.</small></span>
+                  <span class="habit-mark" aria-hidden="true">06</span>
+                </label>
+              </fieldset>
+              <div class="checklist-footer">
+                <p id="progress-announcement" class="visually-hidden" aria-live="polite">0 of 6 habits complete.</p>
+                <span>Small steps still count.</span>
+                <button class="reset-button" id="reset-checklist" type="reset">Clear today's checks</button>
+              </div>
+            </form>
+
+            <aside class="progress-panel" aria-labelledby="progress-title">
+              <p class="progress-kicker">YOUR DAILY RHYTHM</p>
+              <h3 id="progress-title">Progress, not perfection.</h3>
+              <p class="progress-description">Every small choice is worth noticing.</p>
+              <div class="progress-total"><output id="progress-count" for="habit-water habit-move habit-rest habit-sleep habit-relax habit-wellbeing">0</output><span>of 6<br>habits</span></div>
+              <div class="progress-label"><span>Today's progress</span><strong><output id="progress-percent" for="habit-water habit-move habit-rest habit-sleep habit-relax habit-wellbeing">0%</output></strong></div>
+              <div class="progress-track" id="progress-track" role="progressbar" aria-label="Daily habits completed" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" aria-valuetext="0 of 6 habits complete">
+                <span class="progress-fill" id="progress-fill"></span>
+              </div>
+              <p class="progress-count"><span>Keep showing up for yourself.</span><span aria-hidden="true">✳</span></p>
+              <span class="progress-decoration" aria-hidden="true">✳</span>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="tips-section page-shell" id="tips" aria-labelledby="tips-title">
+        <div class="tips-heading">
+          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Notes for feeling well</p>
+          <h2 id="tips-title">A little knowledge,<br><em>lots of care.</em></h2>
+          <p class="tips-lede">Everyday ideas, not a perfect formula. Take what works for your life and leave the rest.</p>
+        </div>
+        <div class="tips-list">
+          <article class="tip-entry">
+            <span class="tip-index">01 <i> / HYDRATION</i></span>
+            <div class="tip-copy"><h3>Keep water within reach.</h3><p>Having a drink nearby can be a helpful reminder to hydrate throughout the day. Needs vary, so listen to your body and your care team's advice.</p></div>
+            <span class="tip-symbol" aria-hidden="true">≈</span>
+          </article>
+          <article class="tip-entry">
+            <span class="tip-index">02 <i> / MOVEMENT</i></span>
+            <div class="tip-copy"><h3>Move in a way that feels good.</h3><p>A walk, a stretch, or an active trip across campus all count. Choose an option that suits your day and abilities.</p></div>
+            <span class="tip-symbol" aria-hidden="true">↗</span>
+          </article>
+          <article class="tip-entry">
+            <span class="tip-index">03 <i> / REST</i></span>
+            <div class="tip-copy"><h3>Make space to wind down.</h3><p>A calming routine and a reasonably consistent sleep schedule may support restful sleep. Everyone's needs and schedules differ.</p></div>
+            <span class="tip-symbol" aria-hidden="true">☾</span>
+          </article>
+          <article class="tip-entry">
+            <span class="tip-index">04 <i> / EVERYDAY STRESS</i></span>
+            <div class="tip-copy"><h3>Take one thing at a time.</h3><p>A brief pause, a few comfortable breaths, or talking with someone you trust can help you navigate a busy moment.</p></div>
+            <span class="tip-symbol" aria-hidden="true">⌁</span>
+          </article>
+          <p class="health-note">These tips are for general education, not diagnosis or treatment, and are not a substitute for professional medical advice.</p>
+        </div>
+      </section>
+
+      <section class="planner-section" id="planner" aria-labelledby="planner-title">
+        <div class="page-shell planner-layout">
+          <div class="planner-intro">
+            <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Make it your own</p>
+            <h2 id="planner-title">Your Daily<br><em>Wellness Plan.</em></h2>
+            <p>Choose a goal to see a few gentle, practical ideas for your day. Pick what feels right for you.</p>
+            <span class="planner-aside" aria-hidden="true">A good day can begin with one small intention.</span>
+          </div>
+          <div class="planner-workspace">
+            <form class="planner-form" id="planner-form">
+              <label for="wellness-goal">I’d like to focus on</label>
+              <div class="planner-controls">
+                <select id="wellness-goal" name="goal" aria-describedby="planner-hint">
+                  <option value="">Select a wellness goal</option>
+                  <option value="better-rest">Better Rest</option>
+                  <option value="more-movement">More Movement</option>
+                  <option value="hydration">Hydration</option>
+                  <option value="stress-management">Stress Management</option>
+                  <option value="healthy-daily-routine">Healthy Daily Routine</option>
+                </select>
+                <button class="planner-button" type="submit">Show My Plan <span aria-hidden="true">→</span></button>
+              </div>
+              <p class="planner-hint" id="planner-hint">You can change your goal whenever you like.</p>
+            </form>
+            <div class="planner-results" id="planner-results" role="status" aria-live="polite" aria-atomic="true">
+              <p class="planner-message">Choose a goal above, and we'll find a few small ideas for you.</p>
+            </div>
+            <p class="planner-disclaimer">These are general wellness suggestions. Adapt them to your needs; they are not a substitute for professional advice.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-inner">
+        <a class="brand" href="#home" aria-label="WellNurture home"><span class="brand-symbol" aria-hidden="true">w.</span><span>WellNurture</span></a>
+        <p>Take care, at your own pace.</p>
+        <a class="footer-top" href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
